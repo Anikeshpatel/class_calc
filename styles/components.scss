@@ -1,0 +1,90 @@
+.ui__base {
+	padding: 1rem;
+	box-shadow: 0.5rem 0.5rem 1rem 0 #2b2b2b,
+		-0.7rem -0.7rem 1rem 0 #3b3b3b;
+	transition: box-shadow .1s ease-in-out;
+
+	&.clickable:hover {
+		box-shadow: 0.2rem 0.2rem 1rem 0 #2b2b2b,
+			-0.5rem -0.5rem 1rem 0 #3b3b3b;
+	}
+
+	&.clickable:active {
+		box-shadow: inset 0.5rem 0.5rem 1rem 0 #2b2b2b,
+			inset -0.7rem -0.7rem 1rem 0 #3b3b3b;
+	}
+
+	&.round-sm {
+		border-radius: 1rem;
+	}
+
+	&.round-md {
+		border-radius: 2rem;
+	}
+
+	&.round-lg {
+		border-radius: 3rem;
+	}
+
+	&.round-full {
+		border-radius: 100rem;
+	}
+
+	&.down {
+		box-shadow: inset 0.5rem 0.5rem 1rem 0 #2b2b2b,
+			inset -0.7rem -0.7rem 1rem 0 #3b3b3b;
+	}
+
+	&.error {
+		box-shadow: inset 0.5rem 0.5rem 1rem 0 rgba(orangered, 0.3),
+			inset -0.7rem -0.7rem 3.5rem 0 #3b3b3b;
+	}
+}
+
+.card {
+	padding: 1rem;
+	background-color: #333333;
+	box-shadow: 3rem 3rem 4rem 1rem rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+	width: 100%;
+
+	&.round-sm {
+		border-radius: 1rem;
+	}
+
+	&.round-md {
+		border-radius: 2rem;
+	}
+
+	&.round-lg {
+		border-radius: 3rem;
+	}
+
+	&.round-full {
+		border-radius: 100rem;
+	}
+}
+
+.typography {
+	color: #86748d;
+	font-size: 2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	&.bold {
+		font-weight: bold;
+	}
+
+	&.font_sm {
+		font-size: 1.2rem;
+	}
+
+	&.font_md {
+		font-size: 2rem;
+	}
+
+	&.font_lg {
+		font-size: 3rem;
+	}
+}

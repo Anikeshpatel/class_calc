@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./styles/styles.css" rel='stylesheet' />
+	<title>ClassCalc</title>
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="card round-lg">
+
+			<div class="calc_display_container ui__base down round-lg">
+				<div class="result">
+					= 0
+				</div>
+
+				<div class="calc_input" contenteditable="true"></div>
+			</div>
+
+			<div class="action_container">
+				<div class="switch_container">
+					<input type="checkbox" id="deg_rad_switch">
+					<label for="deg_rad_switch">
+						<div class="toggle"></div>
+						<div class="names">
+							<p class="rad">Radian</p>
+							<p class="deg">Degree</p>
+						</div>
+					</label>
+				</div>
+
+				<div class="error_box typography ui__base down round-full">
+					Something went wrong
+				</div>
+			</div>
+
+
+			<div class="calc_buttons_container">
+				<div class="button clear_btn"> AC </div>
+				<div class="button bracket_btns">(</div>
+				<div class="button bracket_btns">)</div>
+				<div class="button calc-action-btn div">/</div>
+				<div class="button formula_btns">sin</div>
+				<div class="button num_btn seven">7</div>
+				<div class="button num_btn eight">8</div>
+				<div class="button num_btn nine">9</div>
+				<div class="button calc-action-btn mul">*</div>
+				<div class="button formula_btns">cos</div>
+				<div class="button num_btn four">4</div>
+				<div class="button num_btn five">5</div>
+				<div class="button num_btn six">6</div>
+				<div class="button calc-action-btn sub">-</div>
+				<div class="button formula_btns">resin</div>
+				<div class="button num_btn one">1</div>
+				<div class="button num_btn two">2</div>
+				<div class="button num_btn three">3</div>
+				<div class="button calc-action-btn add">+</div>
+				<div class="button pi_btn">PI</div>
+				<div class="button num_btn zero">0</div>
+				<div class="button point_btn">.</div>
+				<div class="button result-btn equal_btn">=</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/mathjs@10.0.0/lib/browser/math.min.js">
+	</script>
+	<script src="./scripts/script.js">
+	</script>
+
+</body>
+
+</html>
